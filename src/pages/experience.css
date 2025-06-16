@@ -1,0 +1,6 @@
+.timeline-item {
+    border-top: 1px solid #D3D3D324;
+    /* border-bottom: 1px solid #ffffff13; */
+    border-bottom: 1px solid #D3D3D334;
+    box-shadow: 0 4px 30px #00000034;
+}

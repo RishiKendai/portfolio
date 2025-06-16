@@ -1,0 +1,64 @@
+{
+    "experience": [
+        {
+            "id": "1",
+            "type": "work",
+            "title": "Software Engineer",
+            "organization": "GUVI",
+            "location": "Chennai, India",
+            "duration": "March 2023 - Present",
+            "highlights": "Optimized backend APIs to boost performance by 40% and enhance scalability. Led a full UI revamp in under two months, greatly improving user experience and interface consistency. Also designed and built a scalable webhook system for seamless, event-driven communication across services and integrations.",
+            "skills": [
+                "Golang",
+                "JavaScript",
+                "Node.js",
+                "AWS",
+                "Docker"
+            ]
+        },
+        {
+            "id": "2",
+            "type": "work",
+            "title": "Summer Intern",
+            "organization": "Zoho",
+            "location": "Coimbatore, India",
+            "duration": "June 2022 - August 2022",
+            "highlights": "Built a notification engine from the ground up, designing its architecture and data models to support scalable delivery. As part of the full-stack team, I developed features using Java, JSP, MySQL, and REST APIs. I also focused integrating real-time event handling to ensure faster, more responsive user experiences.",
+            "skills": [
+                "Java",
+                "JSP",
+                "MySQL",
+                "REST APIs",
+                "Architecture"
+            ]
+        },
+        {
+            "id": "3",
+            "type": "education",
+            "title": "MCA",
+            "organization": "Kumaraguru College of Technology",
+            "location": "Coimbatore, India",
+            "duration": "2021 - 2023",
+            "highlights": "Graduated with First Class.",
+            "skills": [
+                "Networking",
+                "AWS",
+                "Linux"
+            ]
+        },
+        {
+            "id": "4",
+            "type": "education",
+            "title": "BCA",
+            "organization": "RNS First Grade College",
+            "location": "Bangalore, India",
+            "duration": "2017 - 2020",
+            "highlights": "Graduated with First Class.",
+            "skills": [
+                "Web Development",
+                "Java",
+                "JSP & Servlets"
+            ]
+        }
+    ]
+}

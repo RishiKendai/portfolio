@@ -1,0 +1,25 @@
+{
+    "projects": [
+        {
+            "id": "1",
+            "title": "ChaxApp",
+            "description": "A simple chat application where we can chat with our friends in real time with less latency and change your dp and use stickers and even more.",
+            "image": "chatapp.webp",
+            "techStack": ["React", "Express", "Socket.io", "MongoDB"],
+            "links": {
+                "code": "https://github.com/RishiKendai/chaxapp"
+            }
+        },
+        {
+            "id": "2",
+            "title": "Octoviz",
+            "description": "GitHub profile analyzer that takes a username and visualizes key insights. It showcases activity trends, contribution history, and language usage. The tool also highlights code style patterns and repository stats. Perfect for understanding a developer's GitHub footprint at a glance.",
+            "image": "octoviz.webp",
+            "techStack": ["React", "GitHub API", "Golang"],
+            "links": {
+                "code": "https://github.com/rishiKendai/octoviz",
+                "live": "https://octoviz.vercel.app"
+            }
+        }
+    ]
+}

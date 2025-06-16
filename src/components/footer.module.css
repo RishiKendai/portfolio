@@ -1,0 +1,13 @@
+.RKTerminal {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--clr-ice-blue);
+    background: hsl(var(--clr-ice-blue-hsl), .13);
+    border: 1px solid var(--clr-ice-blue);
+    border-radius: 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: 2px 4px;
+    font-size: 0.75rem;
+}
