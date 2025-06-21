@@ -17,7 +17,7 @@ function Projects() {
                   <div className="absolute inset-0 overflow-hidden rounded-b-lg shadow-md">
                     <img loading='lazy' decoding='async' className='w-full h-full object-cover transition-transform duration-400 ease md:group-hover:scale-110' src={project.image} alt={project.title} />
                   </div>
-                  <div className="h-full w-full absolute inset-0 bg-[linear-gradient(to_top,_#00000094,_#00000084_30%,_transparent)] backdrop-blur-[14px] md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-400 ease"></div>
+                  <div className="h-full w-full absolute inset-0 bg-[linear-gradient(to_top,_#00000094,_#00000084_30%,_transparent)] backdrop-blur-[28px] brightness-85 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-400 ease"></div>
                   <div className="relative py-2 px-4 md:translate-y-12 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-400 ease">
                     <h5 className='mb-4 text-[28px] ft-title text-[var(--clr-secondary)]'>{project.title}</h5>
                     <p className='text-sm leading-6 mb-5'>{project.description}</p>

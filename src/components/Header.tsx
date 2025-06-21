@@ -18,7 +18,7 @@ function Header() {
             <div className={`order-1 md:order-2 px-2 py-1 flex items-center mx-auto bg-[hsl(var(--clr-ice-blue-hsl)_,_0.13)] rounded-full  ${styles.navbarList}`}>
                 {
                     navItems.map(({ path, label, icon }) => (
-                        <NavLink className='' to={path}>
+                        <NavLink key={path} className='' to={path}>
                             <span key={path} className={`hidden md:block ${styles.navItem} ${isActive(path) ? styles.active : ''}`}>
                                 {label}
                             </span>

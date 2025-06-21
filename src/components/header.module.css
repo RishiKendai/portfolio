@@ -1,5 +1,5 @@
 .navbarList {
-    backdrop-filter: blur(34px);
+    backdrop-filter: saturate(180%) blur(24px) brightness(70%);
     -webkit-backdrop-filter: blur(34px);
     border-top: 1px solid #D3D3D314;
     border-bottom: 1px solid #D3D3D334;
