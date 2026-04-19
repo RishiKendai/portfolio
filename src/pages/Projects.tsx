@@ -8,8 +8,8 @@ function Projects() {
       <meta name="twitter:title" content="Projects | Rishikesh K M" />
 
       <link rel="canonical" href="https://yourdomain.com/projects" />
-      <section className='flex flex-1 align-center  py-6 flex-col px-3'>
-        <div className='md:px-11 columns-1 md:columns-2 gap-x-6 gap-y-6 max-w-[1200px] justify-center mb-9'>
+      <section className='flex flex-1 align-center justify-center  py-6 flex-col px-3'>
+        <div className='md:px-11 columns-1 md:columns-2 gap-x-6 gap-y-6 max-w-[1200px] mx-auto mb-9'>
           {
             projects.projects.map((project, index) => {
               return (
@@ -33,11 +33,22 @@ function Projects() {
 
                     {/* link */}
                     <div className='mx-auto gap-6 w-100% flex justify-center pt-5 pb-3 border-t border-[hsl(var(--clr-ice-blue-hsl)_,_0.14)]'>
-                      {project.links.live ? <a href={project.links.live} target="_blank" className='rounded-full w-fit text-sm px-3 py-2 flex items-center gap-1 bg-[var(--clr-secondary)] font-bold'>
+                      {project.links.live ? <a href={project.links.live} target="_blank" rel="noopener noreferrer" className='rounded-full w-fit text-sm px-3 py-2 flex items-center gap-1 bg-[var(--clr-secondary)] font-bold'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-link"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
                         Live
                       </a> : ''}
-                      <a href={project.links.code} target="_blank" className='rounded-full w-fit text-sm px-3 py-2 flex items-center gap-1 bg-[var(--clr-accent)] font-bold'>
+                      {'download' in project.links ? <a
+                        href={project.links.download || '#'}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={!project.links.download ? (e) => e.preventDefault() : undefined}
+                        title={!project.links.download ? 'Add your download URL in src/data/projects.json' : undefined}
+                        className={`rounded-full w-fit text-sm px-3 py-2 flex items-center gap-1 bg-[var(--clr-secondary)] font-bold ${!project.links.download ? 'opacity-60 cursor-not-allowed' : ''}`}
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
+                        Download
+                      </a> : ''}
+                      <a href={project.links.code} target="_blank" rel="noopener noreferrer" className='rounded-full w-fit text-sm px-3 py-2 flex items-center gap-1 bg-[var(--clr-accent)] font-bold'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-code"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 8l-4 4l4 4" /><path d="M17 8l4 4l-4 4" /><path d="M14 4l-4 16" /></svg>
                         Code
                       </a>

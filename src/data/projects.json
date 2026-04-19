@@ -2,6 +2,20 @@
     "projects": [
         {
             "id": "1",
+            "title": "Chess CLI",
+            "description": "Developed a fully functioning chess engine from scratch with complete rule handling and game logic.",
+            "image": "chess-cli.png",
+            "techStack": [
+                "Go",
+                "Bubble Tea"
+            ],
+            "links": {
+                "code": "https://github.com/RishiKendai/chess-cli",
+                "download": "https://github.com/RishiKendai/System-Design/releases"
+            }
+        },
+        {
+            "id": "2",
             "title": "Linksot",
             "description": "A high-scale URL shortening platform built to handle 100M+ users and 10M DAU with sub-100ms latency. Features include custom aliases, CRUD APIs, advanced analytics, link expiration, and abuse prevention. Architected for horizontal scalability, 99.99% uptime, and real-time click tracking with device and location insights.",
             "image": "linksot.webp",
@@ -19,7 +33,7 @@
             }
         },
         {
-            "id": "2",
+            "id": "3",
             "title": "Octoviz",
             "description": "GitHub profile analyzer that takes a username and visualizes key insights. It showcases activity trends, contribution history, and language usage. The tool also highlights code style patterns and repository stats, providing a complete view of a developer's GitHub footprint.",
             "image": "octoviz.webp",
@@ -34,7 +48,7 @@
             }
         },
         {
-            "id": "3",
+            "id": "4",
             "title": "ChaxApp",
             "description": "A simple chat application enabling real-time conversations with low latency. Users can change profile pictures, send stickers, and enjoy a smooth messaging experience across devices.",
             "image": "chatapp.webp",
